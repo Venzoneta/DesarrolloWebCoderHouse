@@ -11,7 +11,48 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
-.header{ /* Caracteristicas del Header */
+.container-fluid{
+    background-color: black;
+}
+.navbar-nav{
+display: flex;
+align-items: center;
+}
+
+.logonav{
+    height: 200px;
+    cursor: pointer;
+    transition: all 0.3s;
+  
+}
+.logonav:hover {
+ transform: scale(1.2);
+}
+
+
+.container-fluid .navbar-toggler-icon{  
+    background-color: lightgray;
+}
+
+.container-fluid .collapsenavbar-collapse .nav-item .nav-link {
+    color: white;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: opacity 0.3;
+    
+    /* background-color: lightgray;
+    border-radius: 40px; !important
+    opacity: 80%; */
+}
+
+/* .container-fluid .collapsenavbar-collapse .nav-item .nav-linkactive{
+    color: white;
+    text-decoration: none;
+} */
+/* .header{ 
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -22,7 +63,7 @@ body{
     border: 5px;  
 }
 
-.header .logo{ /* Efecto del cursor al pasar por el logo */
+.header .logo{ 
     cursor: pointer;
 }
 .header .logo .img{
@@ -31,11 +72,11 @@ body{
     transition: all 0.3s;
 }
 
-.header .logo img:hover{   /* Efecto del logo */
+.header .logo img:hover{  
     transform: scale(1.1);
-}
+} */
 
-.header .nav-links{
+/* .header .nav-links{
     list-style: none;
 }
 
@@ -49,14 +90,14 @@ font-size: 25px;
 color: white;
 text-decoration: none;
 font-family: "Bebas Neue", sans-serif; /* Fuente vinculada con google fonts */
-font-weight: 400;
+/* font-weight: 400;
 font-style: normal;
-}
+} */
 
-.header .nav-links li a:hover{ /* Efecto de la nav */
-    color: gray;
-}
-.imginicio .ii1{
+/* .header .nav-links li a:hover{ 
+    color: gray; */ /
+
+/* .imginicio .ii1{
         display: flex;
         align-items: center;
         height: 1280px;
@@ -88,7 +129,7 @@ font-style: normal;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
+} */
 
 
 
