@@ -2,11 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+font-family: "Anton", sans-serif;    font-size: 25px;
     background-color: black;
+    
 }
-
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .body{
     background-color: red;
@@ -27,9 +31,14 @@ align-items: center;
   
 }
 .logonav:hover {
- transform: scale(1.2);
+ transform: scale(1.1);
 }
 
+.nav-link{
+    font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
 
 .container-fluid .navbar-toggler-icon{  
     background-color: lightgray;
@@ -66,17 +75,101 @@ align-items: center;
     max-height: 100%;
     object-fit:cover
 }
+.grid-item1 img:hover{
+ opacity: 0.8;
+ transition: opacity 0.1;
+}
 .grid-item2{
 grid-area: 1/3/4/4;
 }
-    .grid-item2 img {
-                display: block;
-                margin-top: 35px;
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: cover
-        
-            }
+
+
+.grid-item2 H1 {
+       display: block;
+                color: rgb(0,0,0,.1);
+                width: 100%;
+                font-size: 130px;                
+                margin-top: 195px;
+                object-fit: cover;
+                height: max-content;
+                font-family: "Anton", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 0.25cm;
+                line-height: 1.1;
+                margin-left: 10px;
+                background-image: url(../images/circo.jpg);
+                background-size: cover;
+                background-position-y: top;
+
+                background-clip: text;
+               }
+                    
+
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px}
+
+.grid-container2 img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.grid-container2 img:hover{
+    opacity: 0.8;
+    transition: opacity 0.1;
+}
+
 .box{
     grid-template-columns: auto;
+}
+
+.selectorimagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1{
+    display: flex;
+    width: 600px;
+    height: 430px;
+justify-content: center;
+}
+
+.section1 img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+}
+
+.section1 img:hover{
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(105%);
+}
+.notas{
+    display: flex;
+    justify-content: center;
+}
+.notas .nota1{
+    display: inline-block;
+    margin: 0 10px;
+    justify-content: center;
+}
+.notas .nota1 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notas .nota1 h3{
+    display: flex;
+    justify-content: center;
+    color: white;
 }
